@@ -1,0 +1,100 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Atmosphere</title>
+
+    <!-- bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <!--Font Open Sans-->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+
+    <!--for arrow icon-->
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css" />
+
+    <!--css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <style type="text/css">
+
+  .CDBtnBase {
+    background-color: rgba(6, 255, 255, 0.65);
+    color: white;
+  }
+
+  .CDBtnBase:hover {
+    background: rgba(255,83,0,0.8);
+  }
+
+  .CDBtnBase.btn-selected {
+    background-color: #96cddd;
+  }
+
+  #CDSideBarMenu {
+    position: absolute;
+    margin-right: 10px;
+    z-index: 99;
+  }
+
+  #CDContentView {
+    //background-image: url("https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif");
+    //background-repeat: no-repeat;
+    //background-position: 50% 50%;
+  }
+
+  .btn-group-vertical>.btn+.btn{
+    margin-top: 0;
+  }
+
+    </style>
+
+  <script>
+  function urlChange(index){
+    var sites = ['./atmospheres.html',
+                './probes.html',
+                './conversions.html',
+                './craters.html',
+                './gravity.html',
+                './magnetic.html',
+                './radiowaves.html',
+                './spectra.html',
+                './supernova.html',
+                './temperature.html'
+              ]
+    fullPath = sites[index]
+    document.getElementById('CDContentView').setAttribute("src",fullPath)
+  }
+
+
+  </script>
+</head>
+<body>
+
+<div id="CDConceptDB">
+
+    <div>
+        <div id="CDSideBarMenu" class="btn-group-vertical" style="margin-top: 5px">
+
+        <button type="button" class="CDBtnBase btn-selected btn btn-default" onclick="urlChange(0)">
+        <div style="background-image: url('./assets/images/icons//atmospheres.png'); background-size: cover; height: 30px; width: 30px;"></div></button>
+        <button type="button" class="CDBtnBase btn btn-default"  onclick="urlChange(1)"><div style="background-image: url('./assets/images/icons/probes.png'); background-size: cover; height: 30px; width: 30px;"></div></button>
+        <button type="button" class="CDBtnBase btn btn-default"><div style="background-image: url('./assets/images/icons/conversions.png'); background-size: cover; height: 30px; width: 30px;"></div></button>
+        <button type="button" class="CDBtnBase btn btn-default"><div style="background-image: url('./assets/images/icons/craters.png'); background-size: cover; height: 30px; width: 30px;"></div></button>
+
+        <button type="button" class="CDBtnBase btn btn-default"><div style="background-image: url('./assets/images/icons/gravity.png'); background-size: cover; height: 30px; width: 30px;"></div></button>
+        <button type="button" class="CDBtnBase btn btn-default"><div style="background-image: url('./assets/images/icons/magnetic.png'); background-size: cover; height: 30px; width: 30px;"></div></button>
+        <button type="button" class="CDBtnBase btn btn-default"><div style="background-image: url('./assets/images/icons/radiowaves.png'); background-size: cover; height: 30px; width: 30px;"></div></button>
+
+        <button type="button" class="CDBtnBase btn btn-default"><div style="background-image: url('./assets/images/icons/spectra.png'); background-size: cover; height: 30px; width: 30px;"></div></button>
+        <button type="button" class="CDBtnBase btn btn-default"><div style="background-image: url('./assets/images/icons/supernova.png'); background-size: cover; height: 30px; width: 30px;"></div></button>
+        <button type="button" class="CDBtnBase btn btn-default"><div style="background-image: url('./assets/images/icons/temperature.png'); background-size: cover; height: 30px; width: 30px;"></div></button>
+        </div>
+
+<iframe src="./atmosphere.html" id="CDContentView" style="position: absolute; top: 0px; bottom: 0px; left: 70px; width: 100%; height: 90%; border: 0px;"></iframe>
+                <div class="loadedContent"></div>
+</div>
+</div>
+</body>
+<script>urlChange(0);</script>
