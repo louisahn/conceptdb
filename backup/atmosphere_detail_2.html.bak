@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Atmosphere</title>
+
+    <!-- bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <!--Font Open Sans-->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+
+    <!--for arrow icon-->
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css" />
+
+    <!--css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+</head>
+
+<body>
+
+    <!-- Nav tabs -->
+    <div class='main_container_div' >
+    <ul class="nav nav-tabs margin_5"  role="tablist" style=" background-color: #5bc0de;" >
+        <li class="nav-item">
+            <a class="nav-link " data-toggle="tab" href="#back" role="tab" onclick="window.history.back();">
+                <strong><b>    <!--&larr;-->
+                <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+                back
+                </b></strong> 
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#a0" role="tab">Why?</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#a1" role="tab">Gravity</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#a2" role="tab">Moon</a>
+        </li>
+    </ul>
+    </div>
+    <!-- Tab panes -->
+    <div class="tab-content align_c">
+
+        <div class="tab-pane active" id="a0" role="tabpanel">
+            <img src="assets/images/atmosphere/atmosphere_2_dtl_1.jpg" alt="" width='650'>
+            <p class='detail_content_p'>
+Not all worlds have atmospheres. Most of the smaller worlds, such as our Moon, have almost no atmosphere. Why do some worlds have atmospheres while others don’t?
+
+            </p>
+        </div>
+        <div class="tab-pane" id="a1" role="tabpanel">
+                   <img src="assets/images/atmosphere/atmosphere_2_dtl_2.jpg" alt="" width='650'>
+            <p class='detail_content_p'>
+The answer is gravity. A
+world like Jupiter has a great
+deal of gravity, so it is able to
+hold on to its gases. It can
+even hold onto light gases
+like hydrogen and helium.
+Earth and Venus have less
+gravity, but it is enough to
+hold onto the heavier gases,
+like nitrogen and carbon.
+            </p>
+        </div>
+        <div class="tab-pane" id="a2" role="tabpanel">
+                           <img src="assets/images/atmosphere/atmosphere_2_dtl_3.jpg" alt="" width='650'>
+
+            <p class='detail_content_p'>
+Small worlds like our
+moon or Phobos and
+Deimos (the moons of
+Mars) are too small to
+have much gravity.
+Their atmospheres escaped into space a long
+time ago.
+            </p>        
+        </div>
+        <!-- dummy for back button-->
+        <div class="tab-pane" id="back" role="tabpanel">
+
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
