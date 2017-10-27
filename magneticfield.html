@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Magnetic Fields</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <!--For arrow icon-->
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css" />
+
+    <!--Font Open Sans-->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rajdhani" />
+   <!--css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.theme.default.min.css">
+
+    <script src="./assets/owlcarousel/owl.carousel.js"></script>
+
+    <style type="text/css">
+        
+    .owl-dots .owl-dot{
+        display: none !important;
+    }
+    .owl-prev{
+            background: black !important;    
+            font-size: 1.5em !important;
+        }
+    .owl-next{
+            background: black !important;    
+            font-size: 1.5em !important;
+        }
+    
+    </style>
+
+</head>
+
+<body >
+    <div class="row mb-5 main_container_div" >
+        <div class="owl-carousel owl-theme">
+
+            <a href="./magneticfield_detail_1.html">
+            <div class="card card-inverse card-info item">
+              <!-- make img size 255 x 304-->
+              <!-- img source: NASA. https://www.nasa.gov/mission_pages/sunearth/news/gallery/Earths-magneticfieldlines-dipole.html
+            -->
+
+                <img class="card-img-top" src="assets/images/magneticfield/magneticfield_1_sm.jpg">
+                <div class="card-block">
+                    <figure class="profile">
+                        <img src="assets/images/icons/magnetic.png" class="profile-avatar" alt="">
+                    </figure>
+                    <h4 class="card-title"></h4>
+                    <div class="meta card-text ">
+                      ①
+                     The Earth is a Magnet
+                    </div>
+                    <div class="card-text">
+
+                    </div>
+                </div>
+            </div>
+            </a>
+
+            <a href="./magneticfield_detail_2.html">
+            <div class="card card-inverse card-info item " >
+              <!-- img source: NASA. https://www.nasa.gov/images/content/412284main_NAIRAS-magfield.jpg-->
+                <img class="card-img-top" src="assets/images/magneticfield/magneticfield_2_sm.jpg">
+                <div class="card-block ">
+                    <figure class="profile">
+                        <img src="assets/images/icons/magnetic.png" class="profile-avatar" alt="">
+                    </figure>
+                    <h4 class="card-title"></h4>
+                    <div class="meta card-text ">② Protection from Solar Wind
+                    </div>
+                    <div class="card-text">
+                    </div>
+                </div>
+            </div>
+
+            </a>
+
+            <a href="./magneticfield_detail_3.html">
+            <div class="card card-inverse card-info item">
+                <!-- img source: Pixabay. https://pixabay.com/en/nature-landscape-mountains-northern-2568468/ -->
+                <img class="card-img-top" src="assets/images/magneticfield/magneticfield_3_sm.jpg">
+                <div class="card-block">
+                    <figure class="profile">
+                        <img src="assets/images/icons/magnetic.png" class="profile-avatar" alt="">
+                    </figure>
+                    <h4 class="card-title"></h4>
+                    <div class="meta card-text ">③ Northern and Southern Lights
+                    </div>
+                    <div class="card-text">
+                    </div>
+                </div>
+            </div>
+            </a>
+            
+        </div>
+            <div class='container-fluid'>
+                <div>
+                    <br>
+                    <h5>&nbsp;Life is possible on Earth because our planet is surrounded by a magnetic field. Why does the Earth have a magnetic field, when so many worlds do not? Why is a magnetic field so important to us, the residents of Earth?
+                </h5>
+                </div>
+            </div>
+    </div>
+
+
+</body>
+<script >
+            $(document).ready(function() {
+              var owl = $('.owl-carousel');
+              owl.owlCarousel({
+                nav: true,
+                loop: false,
+                responsive: {
+                  0: {
+                    items: 3
+                  },
+                  600: {
+                    items: 3
+                  },
+                  1000: {
+                    items: 3
+                  }
+                }
+              })
+                
+            document.getElementsByClassName('owl-prev')[0].innerHTML = '<i class="fa fa-arrow-circle-left " aria-hidden="true"></i>';
+            document.getElementsByClassName('owl-next')[0].innerHTML = '<i class="fa fa-arrow-circle-right " aria-hidden="true"></i>';
+    
+            });
+    
+//    document.getElementsByClassName("owl-prev").innerText = 'hi'
+</script>
+<script>
+    
+    
+</script>
+</html>
